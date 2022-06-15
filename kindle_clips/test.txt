@@ -1,0 +1,581 @@
+
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1381-1384 | Added on Friday, June 3, 2022 9:30:32 AM
+
+Thus, let’s consider the two additional layers present in the OSI reference model—the presentation layer and the session layer. The role of the presentation layer is to provide services that allow communicating applications to interpret the meaning of data exchanged. These services include data compression and data encryption (which are self-explanatory) as well as data description (which frees the applications from having to worry about the internal format in which data are represented/stored—formats
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1385-1388 | Added on Friday, June 3, 2022 9:31:05 AM
+
+The session layer provides for delimiting and synchronization of data exchange, including the means to build a checkpointing and recovery scheme. The fact that the Internet lacks two layers found in the OSI reference model poses a couple of interesting questions: Are the services provided by these layers unimportant? What if an application needs one of these services? The Internet’s answer to both of these questions is the same—it’s up to the application developer
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1385-1389 | Added on Friday, June 3, 2022 9:31:23 AM
+
+The session layer provides for delimiting and synchronization of data exchange, including the means to build a checkpointing and recovery scheme. The fact that the Internet lacks two layers found in the OSI reference model poses a couple of interesting questions: Are the services provided by these layers unimportant? What if an application needs one of these services? The Internet’s answer to both of these questions is the same—it’s up to the application developer. It’s up to the application developer to decide if a service is important, and if the service is important, it’s up to the application developer to build that functionality into the application.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1396-1397 | Added on Friday, June 3, 2022 9:37:01 AM
+
+link-layer switches implement layers 1 and 2; routers implement layers 1 through 3.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1397-1398 | Added on Friday, June 3, 2022 9:37:11 AM
+
+This means, for example, that Internet routers are capable of implementing the IP protocol (a layer 3 protocol), while link-layer switches are not.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1398-1400 | Added on Friday, June 3, 2022 9:37:31 AM
+
+We’ll see later that while link-layer switches do not recognize IP addresses, they are capable of recognizing layer 2 addresses, such as Ethernet addresses. Note that hosts implement all five layers; this is consistent with the view that the Internet architecture puts much of its complexity at the edges of the network.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1407-1408 | Added on Friday, June 3, 2022 9:39:45 AM
+
+The added information might include information allowing the receiver-side transport layer to deliver the message up to the appropriate application, and error-detection bits that allow the receiver to determine whether bits in the message have been changed in route
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1407-1409 | Added on Friday, June 3, 2022 9:39:58 AM
+
+The added information might include information allowing the receiver-side transport layer to deliver the message up to the appropriate application, and error-detection bits that allow the receiver to determine whether bits in the message have been changed in route. The transport layer then passes the segment to the network layer, which adds network-layer header information
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1413-1414 | Added on Friday, June 3, 2022 9:40:16 AM
+
+The payload is typically a packet from the layer above.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1445-1446 | Added on Friday, June 3, 2022 9:42:44 AM
+
+which the bad guys control and leverage for spam e-mail distribution or distributed denial-of-service attacks (soon to be discussed) against targeted hosts
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1445-1446 | Added on Friday, June 3, 2022 9:42:46 AM
+
+which the bad guys control and leverage for spam e-mail distribution or distributed denial-of-service attacks (soon to be discussed) against targeted hosts
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1452-1453 | Added on Friday, June 3, 2022 9:43:21 AM
+
+recipient in the user’s address book. Worms are malware that can enter a device without any explicit user interaction.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1454-1455 | Added on Friday, June 3, 2022 9:43:46 AM
+
+In some cases, without any user intervention, the application may accept the malware from the Internet and run it, creating a worm.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1463-1464 | Added on Friday, June 3, 2022 9:44:22 AM
+
+The site Digital Attack Map allows use to visualize the top daily DoS attacks worldwide [DAM 2016]. Most Internet DoS attacks
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1466-1467 | Added on Friday, June 3, 2022 9:44:36 AM
+
+If the right sequence of packets is sent to a vulnerable application or operating system, the service can stop or, worse, the host can crash.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1467-1468 | Added on Friday, June 3, 2022 9:44:43 AM
+
+The attacker sends a deluge of packets to the targeted host—so many packets that the target’s access link becomes clogged, preventing legitimate
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1467-1468 | Added on Friday, June 3, 2022 9:44:48 AM
+
+The attacker sends a deluge of packets to the targeted host—so many packets that the target’s access link becomes clogged, preventing legitimate packets from reaching the server
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1468-1470 | Added on Friday, June 3, 2022 9:44:54 AM
+
+The attacker establishes a large number of half-open or fully open TCP connections (TCP connections are discussed in Chapter 3) at the target host
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1472-1474 | Added on Friday, June 3, 2022 9:45:07 AM
+
+it’s evident that if the server has an access rate of R bps, then the attacker will need to send traffic at a rate of approximately R bps to cause damage.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1477-1478 | Added on Friday, June 3, 2022 9:45:21 AM
+
+the attacker controls multiple sources and has each source blast traffic at the target. With this approach, the aggregate traffic rate across all the controlled sources needs to be
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1479-1481 | Added on Friday, June 3, 2022 9:45:31 AM
+
+approximately R to cripple the service. DDoS attacks leveraging botnets with thousands of comprised hosts are a common occurrence today [DAM 2016]. DDos attacks are much harder to detect and defend against than a DoS attack from a single host.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1486-1488 | Added on Friday, June 3, 2022 9:46:22 AM
+
+also creates a major security vulnerability—by placing a passive receiver in the vicinity of the wireless transmitter, that receiver can obtain a copy of every packet that is transmitted!
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1486-1488 | Added on Friday, June 3, 2022 9:46:29 AM
+
+it also creates a major security vulnerability—by placing a passive receiver in the vicinity of the wireless transmitter, that receiver can obtain a copy of every packet that is transmitted!
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1486-1490 | Added on Friday, June 3, 2022 9:46:41 AM
+
+it also creates a major security vulnerability—by placing a passive receiver in the vicinity of the wireless transmitter, that receiver can obtain a copy of every packet that is transmitted! These packets can contain all kinds of sensitive information, including passwords, social security numbers, trade secrets, and private personal messages. A passive receiver that records a copy of every packet that flies by is called a packet sniffer.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1492-1494 | Added on Friday, June 3, 2022 9:47:09 AM
+
+Furthermore, a bad guy who gains access to an institution’s access router or access link to the Internet may be able to plant a sniffer that makes a copy of every packet going to/from the organization. Sniffed packets can then be analyzed offline for sensitive information.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1495-1496 | Added on Friday, June 3, 2022 9:47:21 AM
+
+Packet-sniffing software is freely available at various Web sites and as commercial products. Professors teaching a networking course have been known to assign lab exercises that involve writing a packetsniffing and application-layer data reconstruction program.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1497-1498 | Added on Friday, June 3, 2022 9:47:32 AM
+
+associated with this text (see the introductory Wireshark lab at the end of this chapter) use exactly such a packet sniffer!
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1499-1500 | Added on Friday, June 3, 2022 9:47:42 AM
+
+Because packet sniffers are passive—that is, they do not inject packets into the channel—they are difficult to detect. So, when we send packets into a wireless channel, we must accept the possibility that some bad guy may be recording copies of our packets.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1499-1501 | Added on Friday, June 3, 2022 9:47:47 AM
+
+Because packet sniffers are passive—that is, they do not inject packets into the channel—they are difficult to detect. So, when we send packets into a wireless channel, we must accept the possibility that some bad guy may be recording copies of our packets. As you may have guessed, some of the best defenses against packet sniffing involve cryptography.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1505-1508 | Added on Friday, June 3, 2022 9:48:09 AM
+
+Imagine the unsuspecting receiver (say an Internet router) who receives such a packet, takes the (false) source address as being truthful, and then performs some command embedded in the packet’s contents (say modifies its forwarding table). The ability to inject packets into the Internet with a false source address is known as IP spoofing,
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1508-1510 | Added on Friday, June 3, 2022 9:48:18 AM
+
+To solve this problem, we will need end-point authentication, that is, a mechanism that will allow us to determine with certainty if a message originates from where we think it does. Once again, we encourage you to think about how this can be done for network applications and protocols as you progress through
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1522-1524 | Added on Friday, June 3, 2022 9:49:05 AM
+
+We should seek defenses against sniffing, endpoint masquerading, man-in-the-middle attacks, DDoS attacks, malware, and more. We should keep in mind that communication among mutually trusted users is the exception rather than the rule. Welcome to the world
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1522-1524 | Added on Friday, June 3, 2022 9:49:12 AM
+
+We should seek defenses against sniffing, endpoint masquerading, man-in-the-middle attacks, DDoS attacks, malware, and more. We should keep in mind that communication among mutually trusted users is the exception rather than the rule. Welcome to the world of modern computer networking!
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1529-1530 | Added on Friday, June 3, 2022 9:50:04 AM
+
+The field of computer networking and today’s Internet trace their beginnings back to the early 1960s,
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1555-1555 | Added on Friday, June 3, 2022 9:51:50 AM
+
+Ray Tomlinson wrote the first e-mail program in 1972.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1569-1570 | Added on Friday, June 3, 2022 9:52:54 AM
+
+of TCP, however, were quite different from today’s TCP. The early versions
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1569-1571 | Added on Friday, June 3, 2022 9:53:09 AM
+
+versions of TCP, however, were quite different from today’s TCP. The early versions of TCP combined a reliable in-sequence delivery of data via end-system retransmission (still part of today’s TCP) with forwarding functions (which today are performed by IP).
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1573-1574 | Added on Friday, June 3, 2022 9:53:20 AM
+
+The three key Internet protocols that we see today—TCP, UDP, and IP—were conceptually in place by the end of the 1970s.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1581-1582 | Added on Friday, June 3, 2022 9:53:52 AM
+
+Twentyfive years ago, well before the PC revolution and the explosion of networks, Metcalfe and Boggs were laying the foundation for today’s PC LANs.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1590-1593 | Added on Friday, June 3, 2022 9:54:59 AM
+
+The transition [RFC 801] from NCP to TCP/IP was a flag day event—all hosts were required to transfer over to TCP/IP as of that day. In the late 1980s, important extensions were made to TCP to implement host-based congestion control [Jacobson 1988]. The DNS, used to map between a human-readable Internet name
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1595-1597 | Added on Friday, June 3, 2022 9:55:14 AM
+
+Paralleling this development of the ARPAnet (which was for the most part a US effort), in the early 1980s the French launched the Minitel project, an ambitious plan to bring data networking into everyone’s home. Sponsored by the French government, the Minitel system consisted of a public packet-switched network (based on the X.25 protocol suite
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1605-1607 | Added on Friday, June 3, 2022 9:55:58 AM
+
+The main event of the 1990s was to be the emergence of the World Wide Web application, which brought the Internet into the homes and businesses of millions of people worldwide. The Web served as a platform for enabling and deploying hundreds of new applications that we take for granted today, including search (e.g., Google and Bing) Internet commerce (e.g., Amazon and eBay) and social networks (e.g., Facebook).
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1608-1608 | Added on Friday, June 3, 2022 9:56:08 AM
+
+The Web was invented at CERN by Tim Berners-Lee between 1989 and 1991
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1611-1612 | Added on Friday, June 3, 2022 9:56:23 AM
+
+Berners-Lee and his associates developed initial versions of HTML, HTTP, a Web server, and a browser—the four key components of the Web
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1611-1612 | Added on Friday, June 3, 2022 9:56:34 AM
+
+Berners-Lee and his associates developed initial versions of HTML, HTTP, a Web server, and a browser—the four key components of the Web. Around the end of 1993 there were about two hundred Web servers in operation
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1617-1618 | Added on Friday, June 3, 2022 9:56:57 AM
+
+In 1996, Microsoft started to make browsers, which started the browser war between Netscape and Microsoft, which Microsoft won a few years later [Cusumano 1998].
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1621-1622 | Added on Friday, June 3, 2022 9:57:14 AM
+
+Peer-to-peer file sharing of MP3s, pioneered by Napster
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1623-1624 | Added on Friday, June 3, 2022 9:57:27 AM
+
+The period from 1995 to 2001 was a roller-coaster ride for the Internet in the financial markets. Before they were even profitable, hundreds of Internet startups made initial public offerings and started to be traded in a stock market.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1625-1627 | Added on Friday, June 3, 2022 9:57:33 AM
+
+The Internet stocks collapsed in 2000–2001, and many startups shut down. Nevertheless, a number of companies emerged as big winners in the Internet space, including Microsoft, Cisco, Yahoo, e-Bay, Google, and Amazon.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1627-1629 | Added on Friday, June 3, 2022 9:57:53 AM
+
+Innovation in computer networking continues at a rapid pace. Advances are being made on all fronts, including deployments of faster routers and higher transmission speeds in both access networks and in network backbones.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1630-1630 | Added on Friday, June 3, 2022 9:58:00 AM
+
+deployment of broadband Internet access to homes—not only cable modems and DSL but also fiber to the home, as discussed
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1631-1634 | Added on Friday, June 3, 2022 9:58:08 AM
+
+This high-speed Internet access has set the stage for a wealth of video applications, including the distribution of user-generated video (for example, YouTube), on-demand streaming of movies and television shows (e.g., Netflix), and multi-person video conference (e.g., Skype, Facetime, and Google Hangouts). The increasing ubiquity
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1636-1636 | Added on Saturday, June 4, 2022 9:43:23 AM
+
+The number of wireless devices connecting to the Internet surpassed the number of wired devices in 2011.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1638-1639 | Added on Saturday, June 4, 2022 9:43:41 AM
+
+Online social networks—such as Facebook, Instagram, Twitter, and WeChat (hugely popular in China)—have created massive people networks on top of the Internet
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1641-1645 | Added on Saturday, June 4, 2022 9:44:09 AM
+
+As discussed in Section 1.3.3, online service providers, such as Google and Microsoft, have deployed their own extensive private networks, which not only connect together their globally distributed data centers, but are used to bypass the Internet as much as possible by peering directly with lower-tier ISPs. As a result, Google provides search results and e-mail access almost instantaneously, as if their data centers were running within one’s own computer
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1975-1979 | Added on Saturday, June 4, 2022 10:01:30 AM
+
+need to write software that runs on network-core devices, such as routers or link-layer switches. Even if you wanted to write application software for these network-core devices, you wouldn’t be able to do so. As we learned in Chapter 1, and as shown earlier in Figure 1.24, network-core devices do not function at the application layer but instead function at lower layers—specifically at the network layer and below.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1992-1994 | Added on Saturday, June 4, 2022 10:02:28 AM
+
+Note that with the client-server architecture, clients do not directly communicate with each other; for example, in the Web application, two browsers do not directly communicate.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1996-1997 | Added on Saturday, June 4, 2022 10:02:44 AM
+
+Some of the better-known applications with a client-server architecture include the Web, FTP, Telnet, and e-mail. The client-server architecture is shown in Figure 2.2(a).
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 1999-2003 | Added on Saturday, June 4, 2022 10:03:13 AM
+
+For this reason, a data center, housing a large number of hosts, is often used to create a powerful virtual server. The most popular Internet services—such as search engines (e.g., Google, Bing, Baidu), Internet commerce (e.g., Amazon, eBay, Alibaba), Webbased e-mail (e.g., Gmail and Yahoo Mail), social networking (e.g., Facebook, Instagram, Twitter, and WeChat)—employ one or more data centers.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2004-2006 | Added on Saturday, June 4, 2022 10:03:25 AM
+
+A data center can have hundreds of thousands of servers, which must be powered and maintained. Additionally, the service providers must pay recurring interconnection and bandwidth costs for sending data from their data centers.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2012-2013 | Added on Saturday, June 4, 2022 10:04:03 AM
+
+These applications include file sharing (e.g., BitTorrent), peer-assisted download acceleration (e.g., Xunlei), and Internet telephony and video conference (e.g., Skype)
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2014-2016 | Added on Saturday, June 4, 2022 10:04:20 AM
+
+for many instant messaging applications, servers are used to track the IP addresses of users, but user-touser messages are sent directly between user hosts (without passing
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2016-2018 | Added on Saturday, June 4, 2022 10:04:42 AM
+
+One of the most compelling features of P2P architectures is their self-scalability. For example, in a P2P file-sharing application, although each peer generates workload by requesting files, each peer also adds service capacity to the system by distributing files to other peers.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2022-2023 | Added on Saturday, June 4, 2022 10:06:10 AM
+
+In the jargon of operating systems, it is not actually programs but processes that communicate
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2025-2027 | Added on Saturday, June 4, 2022 10:06:25 AM
+
+But in this book we are not particularly interested in how processes in the same host communicate, but instead in how processes running on different hosts (with potentially different operating systems) communicate
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2027-2028 | Added on Saturday, June 4, 2022 10:06:37 AM
+
+Processes on two different end systems communicate with each other by exchanging messages across the computer network
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2029-2031 | Added on Saturday, June 4, 2022 10:06:47 AM
+
+receiving process receives these messages and possibly responds by sending messages back. Figure 2.1 illustrates that processes communicating with each other reside in the application layer of the five-layer protocol stack.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2031-2032 | Added on Saturday, June 4, 2022 10:06:57 AM
+
+A network application consists of pairs of processes that send messages to each other over a network.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2036-2037 | Added on Saturday, June 4, 2022 10:07:49 AM
+
+With P2P file sharing, the peer that is downloading the file is labeled as the client, and the peer that is uploading the file is labeled as the server.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2038-2040 | Added on Saturday, June 4, 2022 10:08:01 AM
+
+Nevertheless, in the context of any given communication session between a pair of processes, we can still label one process as the client and the other process as the server. We define the client and server processes as follows:
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2047-2048 | Added on Saturday, June 4, 2022 10:08:42 AM
+
+As noted above, most applications consist of pairs of communicating processes, with the two processes in each pair sending messages to each other. Any message sent from one process to another must go through the underlying network
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2050-2054 | Added on Saturday, June 4, 2022 10:09:26 AM
+
+A process is analogous to a house and its socket is analogous to its door. When a process wants to send a message to another process on another host, it shoves the message out its door (socket). This sending process assumes that there is a transportation infrastructure on the other side of its door that will transport the message to the door of the destination process. Once the message arrives at the destination host, the message passes through the receiving process’s door (socket), and the receiving process then acts on the message
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2056-2057 | Added on Saturday, June 4, 2022 10:09:43 AM
+
+As shown in this figure, a socket is the interface between the application layer and the transport layer within a host. It is also referred to as the Application Programming Interface (API)
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2060-2061 | Added on Saturday, June 4, 2022 10:10:03 AM
+
+The only control that the application developer has on the transport-layer side is (1) the choice of transport protocol and (2) perhaps the ability to fix a few transport-layer parameters such as maximum buffer and maximum segment sizes (
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2062-2064 | Added on Saturday, June 4, 2022 10:10:17 AM
+
+Once the application developer chooses a transport protocol (if a choice is available), the application is built using the transport-layer services provided by that protocol. We’ll explore sockets in some detail in Section 2.7.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2067-2069 | Added on Saturday, June 4, 2022 10:10:50 AM
+
+To identify the receiving process, two pieces of information need to be specified: (1) the address of the host and (2) an identifier that specifies the receiving process in the destination host
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2069-2070 | Added on Saturday, June 4, 2022 10:10:54 AM
+
+In the Internet, the host is identified by its IP address. We’ll discuss IP addresses in great detail in
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2074-2075 | Added on Saturday, June 4, 2022 10:11:27 AM
+
+assigned specific port numbers. For example, a Web server is identified by port number 80. A mail server process (using the SMTP protocol) is identified by port number 25. A list of well-known port
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2091-2092 | Added on Saturday, June 4, 2022 10:12:59 AM
+
+Thus, to support these applications, something has to be done to guarantee that the data sent by one end of the application is delivered correctly and completely to the other end of the application. If a protocol provides such a guaranteed
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2092-2094 | Added on Saturday, June 4, 2022 10:13:11 AM
+
+provide reliable data transfer. One important service that a transport-layer protocol can potentially provide to an application is process-to-process reliable data transfer
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2110-2110 | Added on Saturday, June 4, 2022 10:14:28 AM
+
+Applications that have throughput requirements are said to be bandwidth-sensitive
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2112-2115 | Added on Saturday, June 4, 2022 10:14:52 AM
+
+While bandwidth-sensitive applications have specific throughput requirements, elastic applications can make use of as much, or as little, throughput as happens to be available. Electronic mail, file transfer, and Web transfers are all elastic applications.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2116-2117 | Added on Saturday, June 4, 2022 10:15:15 AM
+
+A transport-layer protocol can also provide timing guarantees. As with throughput guarantees, timing guarantees can come in many shapes and forms
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2118-2120 | Added on Saturday, June 4, 2022 10:15:30 AM
+
+service would be appealing to interactive real-time applications, such as Internet telephony, virtual environments, teleconferencing, and multiplayer games, all of which require tight timing constraints on data delivery in order to be effective.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2121-2122 | Added on Saturday, June 4, 2022 10:15:37 AM
+
+Long delays in Internet telephony, for example, tend to result in unnatural pauses in the conversation;
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2123-2125 | Added on Saturday, June 4, 2022 10:15:45 AM
+
+seeing the response from the environment (for example, from another player at the end of an end-to-end connection) makes the application feel less realistic. For non-real-time applications, lower delay is always preferable to higher delay, but no tight constraint is placed on the end-to-end delays.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2131-2132 | Added on Saturday, June 4, 2022 10:16:27 AM
+
+Up until this point, we have been considering transport services that a computer network could provide in general.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2138-2140 | Added on Monday, June 6, 2022 9:50:56 AM
+
+Connection-oriented service. TCP has the client and server exchange transport-layer control information with each other before the application-level messages begin to flow. This so-called handshaking procedure alerts the client and server, allowing them to prepare for an onslaught of packets.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2149-2150 | Added on Monday, June 6, 2022 9:51:59 AM
+
+The TCP congestion-control mechanism throttles a sending process (client or server) when the network is congested between sender and receiver. As we will see
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2154-2156 | Added on Monday, June 6, 2022 9:53:10 AM
+
+Internet community has developed an enhancement for TCP, called Secure Sockets Layer (SSL). TCP-enhanced-with-SSL not only does everything that traditional TCP does but also provides critical process-to-process security services
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2165-2168 | Added on Monday, June 6, 2022 9:54:20 AM
+
+UDP is a no-frills, lightweight transport protocol, providing minimal services. UDP is connectionless, so there is no handshaking before the two processes start to communicate. UDP provides an unreliable data transfer service—that is, when a process sends a message into a UDP socket, UDP provides no guarantee that the message will ever reach the receiving process.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2168-2168 | Added on Monday, June 6, 2022 9:54:28 AM
+
+Furthermore, messages that do arrive at the receiving process may arrive out of order. UDP
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2168-2171 | Added on Monday, June 6, 2022 9:54:34 AM
+
+Furthermore, messages that do arrive at the receiving process may arrive out of order. UDP does not include a congestion-control mechanism, so the sending side of UDP can pump data into the layer below (the network layer) at any rate it pleases. (Note, however, that the actual end-to-end throughput may be less than this rate due to the limited transmission capacity of intervening links or due to congestion)
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2179-2180 | Added on Monday, June 6, 2022 9:55:26 AM
+
+In summary, today’s Internet can often provide satisfactory service to time-sensitive applications, but it cannot provide any timing or
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2179-2180 | Added on Monday, June 6, 2022 9:55:31 AM
+
+In summary, today’s Internet can often provide satisfactory service to time-sensitive applications, but it cannot provide any timing or throughput guarantees.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2182-2185 | Added on Monday, June 6, 2022 9:56:00 AM
+
+TCP provides reliable data transfer, guaranteeing that all data will eventually get to its destination. Because Internet telephony applications (such as Skype) can often tolerate some loss but require a minimal rate to be effective, developers of Internet telephony applications usually prefer to run their applications over UDP, thereby circumventing TCP’s congestion control mechanism and packet overheads.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2186-2186 | Added on Monday, June 6, 2022 9:56:11 AM
+
+often are designed to use TCP as a backup if UDP communication fails.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2204-2210 | Added on Monday, June 6, 2022 9:58:33 AM
+
+between browser and Web server. Thus, HTTP is only one piece (albeit, an important piece) of the Web application. As another example, an Internet e-mail application also has many components, including mail servers that house user mailboxes; mail clients (such as Microsoft Outlook) that allow users to read and create messages; a standard for defining the structure of an e-mail message; and application-layer protocols that define how messages are passed between servers, how messages are passed between servers and mail clients, and how the contents of message headers are to be interpreted. The principal application-layer protocol for electronic mail is SMTP (Simple Mail Transfer Protocol) [RFC 5321]. Thus, e-mail’s principal application-layer protocol, SMTP, is only one piece (albeit an important piece) of the e-mail application.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2213-2215 | Added on Monday, June 6, 2022 9:58:53 AM
+
+In this chapter we discuss five important applications: the Web, electronic mail, directory service video streaming, and P2P applications. We first discuss the Web, not only because it is an enormously popular application, but also because its application-layer protocol, HTTP, is straightforward
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2213-2215 | Added on Monday, June 6, 2022 9:58:57 AM
+
+In this chapter we discuss five important applications: the Web, electronic mail, directory service video streaming, and P2P applications. We first discuss the Web, not only because it is an enormously popular application, but also because its application-layer protocol, HTTP, is straightforward and easy to understand.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2217-2218 | Added on Monday, June 6, 2022 9:59:24 AM
+
+Most users do not interact with DNS directly; instead, users invoke DNS indirectly through other applications (including the Web, file transfer, and electronic mail). DNS illustrates nicely how a piece of core network
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2217-2219 | Added on Monday, June 6, 2022 9:59:38 AM
+
+Most users do not interact with DNS directly; instead, users invoke DNS indirectly through other applications (including the Web, file transfer, and electronic mail). DNS illustrates nicely how a piece of core network functionality (network-name to networkaddress translation) can be implemented at the application layer in the Internet
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2219-2222 | Added on Monday, June 6, 2022 9:59:53 AM
+
+applications, and complete our application study by discussing video streaming on demand, including distributing stored video over content distribution networks. In Chapter 9, we’ll cover multimedia applications in more depth, including voice over IP and video conferencing
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2223-2225 | Added on Monday, June 6, 2022 10:00:12 AM
+
+researchers, academics, and university students to log in to remote hosts, to transfer files from local hosts to remote hosts and vice versa, to receive and send news, and to receive and send electronic mail. Although these applications were (and continue to be) extremely useful, the Internet was essentially unknown outside of the academic and research communities.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2230-2231 | Added on Monday, June 6, 2022 10:00:36 AM
+
+makes the content available. In addition to being available on demand, the Web has many other wonderful features that people love and cherish.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2235-2237 | Added on Monday, June 6, 2022 10:01:02 AM
+
+The HyperText Transfer Protocol (HTTP), the Web’s application-layer protocol, is at the heart of the Web.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2239-2240 | Added on Monday, June 6, 2022 10:02:29 AM
+
+HTTP defines the structure of these messages and how the client and server exchange the messages. Before explaining HTTP in detail, we should review some Web terminology.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2243-2245 | Added on Monday, June 6, 2022 10:02:46 AM
+
+Most Web pages consist of a base HTML file and several referenced objects. For example, if a Web page contains HTML text and five JPEG images, then the Web page has six objects: the base HTML file plus the five images.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2246-2246 | Added on Monday, June 6, 2022 10:03:08 AM
+
+of the server that houses the object and the object’s path name. For example, the URL
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2247-2251 | Added on Monday, June 6, 2022 10:03:17 AM
+
+has www.someSchool.edu for a hostname and /someDepartment/picture.gif for a path name. Because Web browsers (such as Internet Explorer and Firefox) implement the client side of HTTP, in the context of the Web, we will use the words browser and client interchangeably.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2252-2253 | Added on Monday, June 6, 2022 10:03:22 AM
+
+which implement the server side of HTTP, house Web objects, each addressable by a URL. Popular Web servers include Apache and Microsoft Internet Information Server
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2253-2254 | Added on Monday, June 6, 2022 10:03:29 AM
+
+HTTP defines how Web clients request Web pages from Web servers and how servers transfer Web pages to clients.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2257-2259 | Added on Monday, June 6, 2022 10:03:56 AM
+
+HTTP uses TCP as its underlying transport protocol (rather than running on top of UDP). The HTTP client first initiates a TCP connection with the server. Once the connection is established, the browser and the server processes access TCP through their socket interfaces.
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2259-2260 | Added on Monday, June 6, 2022 10:04:02 AM
+
+As described in Section 2.1, on the client side the socket interface is the door between the client process and the TCP connection; on the server side it is the door between the server process and the TCP
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2261-2262 | Added on Monday, June 6, 2022 10:04:07 AM
+
+The client sends HTTP request messages into its socket interface and receives HTTP response messages from its socket interface. Similarly, the HTTP server receives request messages
+==========
+Computer Networking _ A Top Down Approach, 7th, converted (Unknown)
+- Your Highlight on Location 2269-2272 | Added on Monday, June 6, 2022 7:07:20 PM
+
+It is important to note that the server sends requested files to clients without storing any state information about the client. If a particular client asks for the same object twice in a period of a few seconds, the server does not respond by saying that it just served the object to the client; instead, the server resends the object, as it has completely forgotten what it did earlier. Because an HTTP server maintains no information about the clients, HTTP is said to be a stateless protocol
+==========
