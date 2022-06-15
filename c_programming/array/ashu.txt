@@ -1,0 +1,6 @@
+This is a new file and am writing more and more to learn about the computers
+this is a fundamental tool vim. 
+I love it as it is very fast and interacts directly with the core
+ want to  
+ and hence like vim and other such terminal based editors.
+Most of the people like me who love computers justatasi

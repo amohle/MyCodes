@@ -1,0 +1,13 @@
+import turtle
+tt1=turtle.Turtle()
+tt2=turtle.Turtle()
+tt1.color('blue')
+tt2.color('orange')
+tt1.penup()
+tt1.setposition(120,0)
+tt1.pendown()
+tt1.circle(100)
+tt2.penup()
+tt2.setposition(-120,0)
+tt2.pendown()
+tt2.circle(100)
