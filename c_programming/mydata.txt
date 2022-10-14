@@ -1,0 +1,3 @@
+ners/mac/new_codes/c_programming/" && gcc FileWriter2.c -o FileWriter2 && "/Users/mac/new_codes/c_programming/"FileWriter2
+me=ash,age=3,id=34
+name=as,age=34,id=23
